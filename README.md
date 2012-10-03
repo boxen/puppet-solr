@@ -1,4 +1,11 @@
-# Puppet solr for Boxen
+# SOLR Puppet Module for Boxen
 
-FIXME: update me bro
+Requires the following boxen modules:
 
+* `boxen`
+
+## Usage
+
+```puppet
+include solr
+```
