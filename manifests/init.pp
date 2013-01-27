@@ -12,7 +12,7 @@ class solr {
   }
 
   package { 'boxen/brews/solr':
-    ensure  => '3.6.1-boxen1',
+    ensure  => '4.0.0-boxen1',
     require => Class['java']
   }
 }
