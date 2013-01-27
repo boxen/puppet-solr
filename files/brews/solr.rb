@@ -2,7 +2,7 @@ require 'formula'
 
 class Solr < Formula
   homepage 'http://lucene.apache.org/solr/'
-  url 'http://www.apache.org/dyn/closer.cgi?path=lucene/solr/4.1.0/apache-solr-4.1.0.tgz'
+  url 'http://www.apache.org/dyn/closer.cgi?path=lucene/solr/4.1.0/solr-4.1.0.tgz'
   sha1 'ef1291d255e6dfe6fc4ecdd4723d4bf682d21f0d'
 
   version '4.1.0-boxen1'
