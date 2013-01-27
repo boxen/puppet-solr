@@ -3,7 +3,8 @@ require 'spec_helper'
 describe 'solr' do
   let(:facts) do
     {
-      :boxen_home => '/opt/boxen'
+      :boxen_home => '/opt/boxen',
+      :boxen_user => 'wfarr',
     }
   end
 
@@ -11,8 +12,11 @@ describe 'solr' do
     should include_class('homebrew')
     should include_class('java')
 
+    should contain_homebrew__formula('solr').with_before('Package[boxen/brews/solr]')
+
     should contain_package('boxen/brews/solr').with({
-      :ensure => '3.6.1-boxen1'
+      :ensure  => '3.6.1-boxen1',
+      #:require => 'Class[java]'
     })
   end
 end
