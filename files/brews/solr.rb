@@ -5,7 +5,7 @@ class Solr < Formula
   url 'http://www.apache.org/dyn/closer.cgi?path=lucene/solr/4.0.0/apache-solr-4.0.0.tgz'
   sha1 '0cb61d9572516fc627785201b79b3a85e95f877d'
 
-  verison '4.0.0-boxen1'
+  version '4.0.0-boxen1'
 
   def script; <<-EOS.undent
     #!/bin/sh
