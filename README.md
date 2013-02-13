@@ -1,11 +1,14 @@
 # SOLR Puppet Module for Boxen
 
-Requires the following boxen modules:
-
-* `boxen`
-
 ## Usage
 
 ```puppet
 include solr
 ```
+
+## Required Puppet Modules
+
+* boxen
+* homebrew
+* java
+* stdlib
