@@ -15,7 +15,7 @@ describe 'solr' do
     should contain_homebrew__formula('solr').with_before('Package[boxen/brews/solr]')
 
     should contain_package('boxen/brews/solr').with({
-      :ensure  => '4.3.0-boxen1',
+      :ensure  => '4.3.1-boxen1',
       #:require => 'Class[java]'
     })
   end
