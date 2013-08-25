@@ -10,7 +10,13 @@ include solr
 
 ## Required Puppet Modules
 
-* boxen
-* homebrew
-* java
-* stdlib
+* `boxen`
+* `homebrew`
+* `repository`
+* `java`
+* `stdlib`
+
+## Development
+
+Then write some code. Run `script/cibuild` to test it. Check the `script`
+directory for other useful tools.
