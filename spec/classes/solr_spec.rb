@@ -11,7 +11,7 @@ describe 'solr' do
 
     should contain_package('boxen/brews/solr').with({
       :ensure  => '4.3.1-boxen1',
-      #:require => 'Class[java]'
+      :require => 'Class[Java]'
     })
   end
 end
