@@ -1,12 +1,7 @@
 require 'spec_helper'
 
 describe 'solr' do
-  let(:facts) do
-    {
-      :boxen_home => '/opt/boxen',
-      :boxen_user => 'wfarr',
-    }
-  end
+  let(:facts) { default_test_facts }
 
   it do
     should include_class('homebrew')
