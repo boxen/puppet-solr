@@ -10,7 +10,7 @@ class solr {
   homebrew::formula { 'solr': }
   ->
   package { 'boxen/brews/solr':
-    ensure  => '4.3.1-boxen1',
+    ensure  => '4.4.0-boxen1',
     require => Class['java']
   }
 }
